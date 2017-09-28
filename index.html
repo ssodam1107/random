@@ -1,0 +1,31 @@
+<!doctype html>
+<body>
+	<!-- html에서 바로 이벤트를 처리 -->
+	<button id="floatPrint">소수점 랜덤</button>
+	<button id="intPrint">한자리 정수 랜덤</button>
+	<button id="int2Print">두자리 랜덤</button>
+	<button id="perPrint">퍼센트 랜덤</button>
+	<div id="display"></div>
+
+
+	<script>
+		//자바스크립트에서 바로 이벤트를 처리
+		floatPrint.onclick=function(){ a(); }
+		intPrint.onclick=function(){ b(); }
+		int2Print.onclick=function(){ c(); }
+		perPrint.onclick=function(){ d(); }
+
+		function a(){
+			display.innerHTML=Math.random();
+		}
+		function b(){
+			display.innerHTML=Math.round(Math.random()*10);
+		}
+		function c(){
+			display.innerHTML=Math.round(Math.random()*100);
+		}
+		function d(){
+			display.innerHTML=Math.round(Math.random()*100)+"%";
+		}
+	</script>
+</body>
